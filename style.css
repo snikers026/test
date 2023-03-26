@@ -99,3 +99,37 @@
     background-color: rgb(207, 207, 207);
     background-size: 500px;
 }
+
+.bord {
+    margin-top: 10px;
+    border-radius: 120px;
+    margin-left: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: #000000;
+    background-position: center;
+    animation: anim 6s infinite;
+}
+@keyframes anim{
+    0%{
+        margin-left: 10px;
+        background-color: #000000;
+    }
+    25%{
+        margin-left: 605px;
+        background-color: #404040;
+    }
+    50%{
+        margin-left: 1210px;
+        background-color: #808080;
+    }
+    100%{
+        margin-left: 10px;
+        background-color: #000000;
+    }
+}
+.bord:hover{
+    background-image: url(den.jpg);
+    background-size: 400px;
+    background-position-x: -160px;
+}
